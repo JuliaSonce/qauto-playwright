@@ -2,7 +2,6 @@ import { existsSync, readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { defineConfig, devices } from '@playwright/test';
 
-const path = resolve(__dirname, '.playwright/cli.config.json');
 type HttpCredentials = { username: string; password: string };
 
 function readCliHttpCredentials(): HttpCredentials | undefined {
